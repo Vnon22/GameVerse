@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Games Gallery - GameVerse</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="external style.css">
+
+    <style>
+
+        #searchBar {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+            background-color: #2a2a2a;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px,0.4fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .game-card {
+            background-color: #1f1f1f;
+            padding: 10px;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .game-card img {
+            width: 50%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+		
+		p {
+		   font-size: 15px;
+		}
+		
+    </style>
+</head>
+<body>
+<nav class="navbar">
+ <a href="mini project.html" class="brand">
+    <img src="gameverse logo.png" alt="GameVerse logo" class="logo-img">
+    <span class="brand-text">GameVerse</span>
+  </a>
+  <ul>
+    <li><a href="mini project.html">Home</a></li>
+    <li><a href="Games.html">Games</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul>
+</nav>
+<br>
+<button onclick="toggleTheme()">🌗 Theme </button>
+    <h1>🎮 Games Gallery</h1>
+
+    <input type="text" id="searchBar" placeholder="Search games..." />
+<hr>
+<button id="random-game">🎲 Play a Random Game</button>
+
+    <div class="games-grid">
+        <div class="game-card">
+            <a href="https://www.ponggame.org/">
+                <img src="pong.png" alt="Pong">
+                <h3>Pong</h3>
+                <p>Classic paddle and ball arcade game.</p>
+            </a>
+        </div>
+	
+
+        <div class="game-card">
+            <a href="https://play.tetris.com/">
+                <img src="tetris.jpeg" alt="Tetris">
+                <h3>Tetris</h3>
+                <p>Arrange falling blocks to clear lines.</p>
+            </a>
+        </div>
+
+        <div class="game-card">
+            <a href="https://freeasteroids.org/">
+                <img src="asteroids.jpeg" alt="Asteroids">
+                <h3>Asteroids</h3>
+                <p>Destroy incoming space rocks!</p>
+            </a>
+        </div>
+
+	<div class="game-card">
+            <a href="https://playsnake.org/" >
+                <img src="snake.png" alt="Snake">
+                <h3>Snake</h3>
+                <p>Control a snake to eat food and grow longer.</p>
+            </a>
+        </div>
+
+	<div class="game-card">
+            <a href="https://minesweeperonline.com/" >
+                <img src="minesweeper.png" alt="Minesweeper">
+                <h3>Minesweeper</h3>
+                <p>Clear tiles without hitting bombs.</p>
+            </a>
+        </div>
+
+	<div class="game-card">
+    <a href="https://freeinvaders.org/">
+        <img src="space invaders.jpg" alt="Space Invaders">
+        <h3>Space Invaders</h3>
+        <p>Blast alien ships before they reach you.</p>
+    </a>
+	</div>
+	
+	<div class="game-card">
+    <a href="https://freepacman.org/">
+        <img src="pacman.jpg" alt="Pac-Man">
+        <h3>Pac-Man</h3>
+        <p>Eat pellets and dodge the ghosts!</p>
+    </a>
+	</div>
+
+	<div class="game-card">
+    <a href="https://flappybird.io/">
+        <img src="flappy bird.webp" alt="Flappy Bird">
+        <h3>Flappy Bird</h3>
+        <p>Tap to fly and avoid the pipes!</p>
+    </a>
+	</div>
+
+	<div class="game-card">
+    <a href="https://sudoku.com/">
+        <img src="sudoku.png" alt="Sudoku">
+        <h3>Sudoku</h3>
+        <p>Fill in the grid without repeating numbers.</p>
+    </a>
+	</div>
+	
+	<div class="game-card">
+    <a href="https://www.nytimes.com/games/wordle/index.html">
+        <img src="wordle.png" alt="Wordle">
+        <h3>Wordle</h3>
+        <p>Guess the secret 5-letter word in 6 tries.</p>
+    </a>
+	</div>
+
+    </div>
+
+<br>
+
+ <a href="mini project.html">Back to Home</a>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
