@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact - GameVerse</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/external style.css">
+
+    <style>
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            background-color: #2a2a2a;
+            color: white;
+            border: 1px solid #444;
+            border-radius: 4px;
+        }
+
+
+        font {
+            color: #ff00ff;
+            font-size: 16px;
+        }
+
+        b {
+            color: #8ac000;
+            font-weight: normal;
+            font-size: 14px;
+            display: inline-block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+ <a href="index.html" class="brand">
+    <img src="assets/images/gameverse logo.png" alt="GameVerse logo" class="logo-img">
+    <span class="brand-text">GameVerse</span>
+  </a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Games.html">Games</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul>
+</nav>
+<br>
+<button onclick="toggleTheme()">🌗 Theme </button>
+    <h1>📧 Contact Us</h1>
+
+    <p><font>Have suggestions, feedback, or bugs to report? Contact us below!</font></p>
+
+    <form>
+       <b>Name:</b><br>
+       <input type="text" name="name" placeholder="Enter your name"><br>
+
+       <b>Email:</b><br>
+       <input type="email" name="email" placeholder="Enter your email"><br>
+
+       <b>Message:</b><br>
+       <textarea name="message" rows="4" cols="30" placeholder="Enter your message"></textarea><br><br>
+
+       <button type="submit">Send</button>
+    </form>
+
+    <hr>
+
+    <a href="index.html">Back to Home</a>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/javascript/script.js"></script>
+</body>
+</html>
